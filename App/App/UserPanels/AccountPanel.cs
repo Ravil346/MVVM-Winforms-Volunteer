@@ -28,11 +28,13 @@ namespace App.UserPanels
             WorkPanel = panel;
             WorkPanel.AutoScroll = true;
             WorkPanel.AutoSize = true;
+            WorkPanel.Visible = true; //TODO
             WorkPanel.Controls.Clear();
             _mainUserForm = mainUserForm;
             _yandexClient = yandexClient;
             _context = context;
 
+            WorkPanel.Controls.Add(mainUserForm.planeForPreviewImage);
             var locationTitle = new Point(2, 10);
             var title = new Label()
             {
@@ -44,9 +46,15 @@ namespace App.UserPanels
             WorkPanel.Controls.Add(title);
 
             var ls = CreateUserinfoLabels();
+            if (ls != null && ls.Any())
+            {
+                WorkPanel.Controls.Add(CreateButtonChange(new Point(
+                    WorkPanel.Location.X,
+                    ls.Last().Location.Y + ls.Last().Height + 10 // Добавляем отступ
+                )));
+            }
 
             WorkPanel.Controls.AddRange(ls);
-
             WorkPanel.Controls.Add(CreateButtonChange(new Point(WorkPanel.Location.X ,ls.Last().Size.Height + ls.Last().Location.Y)));
            
         }
@@ -54,14 +62,22 @@ namespace App.UserPanels
         private Button CreateButtonChange(Point buttonLocation)
         {
             Size buttonSize = new Size(120, 30);
+            // var button = new Button()
+            // {
+            //     Size = buttonSize,
+            //     BackColor = FormConstStorage.BaseBackColorForButton,
+            //     Font = FormConstStorage.BaseFont,
+            //     Location = buttonLocation,
+            //     Text = "Изменить",
+            //     AutoSize = true
+            // };
             var button = new Button()
             {
-                Size = buttonSize,
+                Size = new Size(120, 30),
                 BackColor = FormConstStorage.BaseBackColorForButton,
                 Font = FormConstStorage.BaseFont,
                 Location = buttonLocation,
-                Text = "Изменить",
-                AutoSize = true
+                Text = "Изменить"
             };
             button.Click += ButtonChange_Click;
             return button;  
@@ -96,7 +112,7 @@ namespace App.UserPanels
                 x.Name != nameof(info.IsAdmin) &
                 x.Name != nameof(info.Id));
             int counterLocationY = 50;
-            return rightUser.Select(x => 
+            var arrOfLabel =  rightUser.Select(x => 
             {
 
                 var label = new Label()
@@ -110,6 +126,8 @@ namespace App.UserPanels
                 counterLocationY += step;
                 return label;
             }).ToArray();
+            
+            return arrOfLabel;
         }
     }
 }

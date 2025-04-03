@@ -40,7 +40,8 @@ namespace App.ViewModel
             Size = new Size(625, 445),
             AutoSize = true,
         };
-        private Panel planeForPreviewImage = new Panel()
+
+        internal Panel planeForPreviewImage = new Panel()
         {
             Size = new Size(100, 100), // Размер панели
             Location = new Point(20, 20), // Положение на форме
@@ -65,7 +66,7 @@ namespace App.ViewModel
             PanelProfile.Visible = false;
 
             // Добавляем planeForPreviewImage в PanelProfile
-            PanelProfile.Controls.Add(planeForPreviewImage);
+            //PanelProfile.Controls.Add(planeForPreviewImage);
 
             var panelA = new AccountPanel(Context.User!.GetUserWithInfo(), this.PanelProfile, this, this.Context, _YandexClient);
 
@@ -83,6 +84,7 @@ namespace App.ViewModel
 
             WorkPanel.Controls.AddRange([ PanelEducation, PanelEvents, PanelProfile]);
 
+            planeForPreviewImage.Paint += panelForImage_Paint;
 
         }
         private void MainUserForm_Load(object sender, EventArgs e)
@@ -114,21 +116,30 @@ namespace App.ViewModel
 
         private async void panelForImage_Paint(object sender, PaintEventArgs e)
         {
+            planeForPreviewImage.Controls.Clear();
             if(Context.User!.Photo is not null)
             {
-                using (var httpclient = new HttpClient())
+                try
                 {
-                    var response = await httpclient.GetStreamAsync(Context.User!.Photo.LinkOnData);
-                    panelForImage.Controls.Add(new PictureBox()
+                    using (var httpclient = new HttpClient())
                     {
-                        Image = Image.FromStream(response),
+                        var response = await httpclient.GetStreamAsync(Context.User!.Photo.LinkOnData);
+                        panelForImage.Controls.Add(new PictureBox()
+                        {
+                            Image = Image.FromStream(response),
 
-                        SizeMode = PictureBoxSizeMode.StretchImage,
+                            SizeMode = PictureBoxSizeMode.StretchImage,
 
-                        Size = new Size(64,64),
+                            Size = new Size(64, 64),
 
-                        BackColor = Color.DarkSlateGray,
-                    });
+                            BackColor = Color.DarkSlateGray,
+                        });
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}");
+
                 }
             }
             else
@@ -141,6 +152,7 @@ namespace App.ViewModel
                     Text = "Загрузить фото"
                 };
                 button.Click += Button_Click;
+                planeForPreviewImage.Controls.Add(button);
             }
         }
 

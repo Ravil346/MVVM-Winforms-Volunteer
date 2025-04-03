@@ -96,25 +96,26 @@ namespace App.ViewModel.WorkForm
             if (res == DialogResult.Cancel) return;
             try
             {
-                var file = new FileStream($@"{openFileDialog.FileName}", FileMode.Open);
-                var fileinfo = ExtensionsManagers.ConfiguratePath(file.Name);
-                planeForPreviewImage.Controls.Add(new PictureBox()
+                await using (var file = new FileStream(openFileDialog.FileName, FileMode.Open))
                 {
-                    Image = Image.FromStream(file),
+                    var fileinfo = ExtensionsManagers.ConfiguratePath(file.Name);
+    
+                    planeForPreviewImage.Controls.Add(new PictureBox()
+                    {
+                        Image = Image.FromStream(file),
+                        SizeMode = PictureBoxSizeMode.StretchImage,
+                        Size = new Size(64, 64),
+                        BackColor = Color.DarkSlateGray,
+                    });
 
-                    SizeMode = PictureBoxSizeMode.StretchImage,
+                    await _userRepository.SetImageProfile(_yandexClient, new FileInfoRequest()
+                    {
+                        File = file,
+                        Name = fileinfo.name,
+                        Path = fileinfo.path
+                    }, _context.User!.Email!);
+                }  
 
-                    Size = new Size(64, 64),
-
-                    BackColor = Color.DarkSlateGray,
-                });
-                // Загружаем фото в Yandex Object Storage и обновляем базу данных
-                await _userRepository.SetImageProfile(_yandexClient, new FileInfoRequest()
-                {
-                    File = file,
-                    Name = fileinfo.name,
-                    Path = fileinfo.path
-                }, _context.User!.Email!);
             }
             catch (Exception ex)
             {
@@ -123,5 +124,10 @@ namespace App.ViewModel.WorkForm
             }
 
         }
+        private void planeForPreviewImage_Paint(object sender, PaintEventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
+        
     }
 }
