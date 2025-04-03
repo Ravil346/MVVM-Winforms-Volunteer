@@ -1,0 +1,192 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VolunteerWinformsApp\\App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|d:\\volunteerwinformsapp\\app\\app\\userpanels\\incidentspanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\userpanels\\incidentspanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CB0BD1C-F941-400B-B00C-A4D9E84309AB}|..\\BuisnessLogic\\BuisnessLogic.csproj|d:\\volunteerwinformsapp\\buisnesslogic\\services\\repositories\\incidentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|d:\\volunteerwinformsapp\\app\\app\\userpanels\\taskpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\userpanels\\taskpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|d:\\volunteerwinformsapp\\app\\app\\viewmodel\\workform\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\workform\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|d:\\volunteerwinformsapp\\app\\app\\viewmodel\\workform\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\workform\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|d:\\volunteerwinformsapp\\app\\app\\userpanels\\accountpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\userpanels\\accountpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CB0BD1C-F941-400B-B00C-A4D9E84309AB}|..\\BuisnessLogic\\BuisnessLogic.csproj|d:\\volunteerwinformsapp\\buisnesslogic\\extensions\\extensionsmanagers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|D:\\VolunteerWinformsApp\\App\\app\\viewmodel\\mainuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\mainuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddTask.cs",
+              "DocumentMoniker": "D:\\VolunteerWinformsApp\\App\\App\\ViewModel\\WorkForm\\AddTask.cs",
+              "RelativeDocumentMoniker": "App\\ViewModel\\WorkForm\\AddTask.cs",
+              "ToolTip": "D:\\VolunteerWinformsApp\\App\\App\\ViewModel\\WorkForm\\AddTask.cs",
+              "RelativeToolTip": "App\\ViewModel\\WorkForm\\AddTask.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAuwEoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T18:22:00.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddTask.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\VolunteerWinformsApp\\App\\App\\ViewModel\\WorkForm\\AddTask.cs",
+              "RelativeDocumentMoniker": "App\\ViewModel\\WorkForm\\AddTask.cs",
+              "ToolTip": "D:\\VolunteerWinformsApp\\App\\App\\ViewModel\\WorkForm\\AddTask.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "App\\ViewModel\\WorkForm\\AddTask.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T18:21:58.772Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExtensionsManagers.cs",
+              "DocumentMoniker": "D:\\VolunteerWinformsApp\\BuisnessLogic\\Extensions\\ExtensionsManagers.cs",
+              "RelativeDocumentMoniker": "..\\BuisnessLogic\\Extensions\\ExtensionsManagers.cs",
+              "ToolTip": "D:\\VolunteerWinformsApp\\BuisnessLogic\\Extensions\\ExtensionsManagers.cs",
+              "RelativeToolTip": "..\\BuisnessLogic\\Extensions\\ExtensionsManagers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T17:56:49.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountPanel.cs",
+              "DocumentMoniker": "D:\\VolunteerWinformsApp\\App\\App\\UserPanels\\AccountPanel.cs",
+              "RelativeDocumentMoniker": "App\\UserPanels\\AccountPanel.cs",
+              "ToolTip": "D:\\VolunteerWinformsApp\\App\\App\\UserPanels\\AccountPanel.cs",
+              "RelativeToolTip": "App\\UserPanels\\AccountPanel.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwCoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T17:51:45.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskPanel.cs",
+              "DocumentMoniker": "D:\\VolunteerWinformsApp\\App\\App\\UserPanels\\TaskPanel.cs",
+              "RelativeDocumentMoniker": "App\\UserPanels\\TaskPanel.cs",
+              "ToolTip": "D:\\VolunteerWinformsApp\\App\\App\\UserPanels\\TaskPanel.cs",
+              "RelativeToolTip": "App\\UserPanels\\TaskPanel.cs",
+              "ViewState": "AgIAALoBAAAAAAAAAAAowMkBAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T17:35:39.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IncidentsPanel.cs",
+              "DocumentMoniker": "D:\\VolunteerWinformsApp\\App\\App\\UserPanels\\IncidentsPanel.cs",
+              "RelativeDocumentMoniker": "App\\UserPanels\\IncidentsPanel.cs",
+              "ToolTip": "D:\\VolunteerWinformsApp\\App\\App\\UserPanels\\IncidentsPanel.cs",
+              "RelativeToolTip": "App\\UserPanels\\IncidentsPanel.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAArwHEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:48:23.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IncidentRepository.cs",
+              "DocumentMoniker": "D:\\VolunteerWinformsApp\\BuisnessLogic\\Services\\Repositories\\IncidentRepository.cs",
+              "RelativeDocumentMoniker": "..\\BuisnessLogic\\Services\\Repositories\\IncidentRepository.cs",
+              "ToolTip": "D:\\VolunteerWinformsApp\\BuisnessLogic\\Services\\Repositories\\IncidentRepository.cs",
+              "RelativeToolTip": "..\\BuisnessLogic\\Services\\Repositories\\IncidentRepository.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAADgv7oAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T16:48:23.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainUserForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "D:\\VolunteerWinformsApp\\App\\App\\ViewModel\\MainUserForm.cs",
+              "RelativeDocumentMoniker": "App\\ViewModel\\MainUserForm.cs",
+              "ToolTip": "D:\\VolunteerWinformsApp\\App\\App\\ViewModel\\MainUserForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "App\\ViewModel\\MainUserForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T14:22:09.333Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

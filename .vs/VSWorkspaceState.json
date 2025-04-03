@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\App",
+    "\\App\\App",
+    "\\App\\App\\ViewModel",
+    "\\App\\App\\ViewModel\\WorkForm"
+  ],
+  "SelectedNode": "\\App\\App\\ViewModel\\WorkForm\\ChangeUser.Designer.cs",
+  "PreviewInSolutionExplorer": false
+}
