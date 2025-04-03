@@ -43,3 +43,4 @@ C:\Users\Равиль\Desktop\App2\BuisnessLogic\obj\Debug\net8.0\BuisnessLogic.
 C:\Users\Равиль\Desktop\App2\BuisnessLogic\obj\Debug\net8.0\refint\BuisnessLogic.dll
 C:\Users\Равиль\Desktop\App2\BuisnessLogic\obj\Debug\net8.0\BuisnessLogic.pdb
 C:\Users\Равиль\Desktop\App2\BuisnessLogic\obj\Debug\net8.0\ref\BuisnessLogic.dll
+C:\Users\Равиль\Desktop\App2\BuisnessLogic\obj\Debug\net8.0\BuisnessLogic.sourcelink.json

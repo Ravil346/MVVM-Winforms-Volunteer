@@ -40,3 +40,4 @@ C:\Users\Равиль\Desktop\App2\Data\obj\Debug\net8.0\refint\Data.dll
 C:\Users\Равиль\Desktop\App2\Data\obj\Debug\net8.0\Data.pdb
 C:\Users\Равиль\Desktop\App2\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
 C:\Users\Равиль\Desktop\App2\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\Равиль\Desktop\App2\Data\obj\Debug\net8.0\Data.sourcelink.json
