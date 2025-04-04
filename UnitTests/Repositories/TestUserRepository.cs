@@ -44,7 +44,7 @@ namespace UnitTests.Repositories
                 Email = email,
             });
 
-            unitOfWork.SaveAll();
+            // unitOfWork.SaveAll();
 
             var user = userRepositry.Get(email);
 
@@ -61,7 +61,7 @@ namespace UnitTests.Repositories
             {
                 Id = id,
             });
-            unitOfWork.SaveAll();
+            //unitOfWork.SaveAll();
 
             var user = userRepositry.Get(id);
 
