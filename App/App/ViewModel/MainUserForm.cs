@@ -4,17 +4,20 @@ using BuisnessLogic.Extensions;
 using BuisnessLogic.Models.Request;
 using Data.Entities;
 using Data.Interfaces;
+using BuisnessLogic.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppContext = BuisnessLogic.Models.AppContext;
 
 namespace App.ViewModel
 {
@@ -43,8 +46,8 @@ namespace App.ViewModel
 
         internal Panel planeForPreviewImage = new Panel()
         {
-            Size = new Size(100, 100), // Размер панели
-            Location = new Point(20, 20), // Положение на форме
+            Size = new Size(150, 200), // Размер панели
+            Location = new Point(20, 100), // Положение на форме
             BorderStyle = BorderStyle.FixedSingle, // Добавляем рамку для наглядности
             BackColor = Color.White // Фон панели
         };
@@ -60,13 +63,13 @@ namespace App.ViewModel
 
             this.Context = context;
 
-
+            AppContext.CurrentContext = context;
             PanelEducation.Visible = false;
             PanelEvents.Visible = false;
             PanelProfile.Visible = false;
 
             // Добавляем planeForPreviewImage в PanelProfile
-            //PanelProfile.Controls.Add(planeForPreviewImage);
+            PanelProfile.Controls.Add(planeForPreviewImage);
 
             var panelA = new AccountPanel(Context.User!.GetUserWithInfo(), this.PanelProfile, this, this.Context, _YandexClient);
 
@@ -84,7 +87,8 @@ namespace App.ViewModel
 
             WorkPanel.Controls.AddRange([ PanelEducation, PanelEvents, PanelProfile]);
 
-            planeForPreviewImage.Paint += panelForImage_Paint;
+            //planeForPreviewImage.Paint += panelForImage_Paint;
+            
 
         }
         private void MainUserForm_Load(object sender, EventArgs e)
@@ -116,43 +120,21 @@ namespace App.ViewModel
 
         private async void panelForImage_Paint(object sender, PaintEventArgs e)
         {
-            planeForPreviewImage.Controls.Clear();
-            if(Context.User!.Photo is not null)
-            {
-                try
-                {
-                    using (var httpclient = new HttpClient())
-                    {
-                        var response = await httpclient.GetStreamAsync(Context.User!.Photo.LinkOnData);
-                        panelForImage.Controls.Add(new PictureBox()
-                        {
-                            Image = Image.FromStream(response),
-
-                            SizeMode = PictureBoxSizeMode.StretchImage,
-
-                            Size = new Size(64, 64),
-
-                            BackColor = Color.DarkSlateGray,
-                        });
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Ошибка загрузки изображения: {ex.Message}");
-
-                }
-            }
-            else
+            //planeForPreviewImage.Controls.Clear();
+            if(Context.User!.Photo is null)
             {
                 var button = new Button()
                 {
-                    Size = new Size(64,64),
+                    Size = new Size(150, 50), // Более крупная кнопка
                     BackColor = FormConstStorage.BaseBackColorForButton,
-                    Font = FormConstStorage.BaseFont,
-                    Text = "Загрузить фото"
+                    Font = new Font("Segoe UI", 10, FontStyle.Bold),
+                    Text = "Загрузить фото",
+                    Location = new Point(19, 315) // Центрируем внутри панели
                 };
+                
                 button.Click += Button_Click;
-                planeForPreviewImage.Controls.Add(button);
+                //planeForPreviewImage.Controls.Add(button);
+                PanelProfile.Controls.Add(button);
             }
         }
 
@@ -170,13 +152,17 @@ namespace App.ViewModel
             PanelProfile.Controls.Clear(); // Очищаем старые элементы
             var panelA = new AccountPanel(updatedUser.GetUserWithInfo(), this.PanelProfile, this, _MainPanelContext, _YandexClient);
             PanelProfile = panelA.WorkPanel;
-
+            
+            // Перед добавлением новых элементов в WorkPanel, убедитесь, что planeForPreviewImage уже добавлен
+            PanelProfile.Controls.Add(planeForPreviewImage);
             // Обновляем интерфейс
             WorkPanel.Controls.Remove(PanelProfile); // Удаляем старую панель
+            // Обновляем предварительный просмотр фото
             WorkPanel.Controls.Add(PanelProfile);   // Добавляем обновленную панель
 
             // Обновляем предварительный просмотр фото
             planeForPreviewImage.Invalidate();
+            
         }
 
         private async void UpdatePreviewImage()
@@ -191,14 +177,14 @@ namespace App.ViewModel
                     {
                         Image = Image.FromStream(response),
                         SizeMode = PictureBoxSizeMode.StretchImage,
-                        Size = new Size(64, 64),
+                        Size = new Size(150, 200), // Размер панели
                         BackColor = Color.DarkSlateGray,
                     });
                 }
             }
         }
 
-        private async void Button_Click(object? sender, EventArgs e)
+        internal async void Button_Click(object? sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog()
             {
@@ -222,8 +208,16 @@ namespace App.ViewModel
                     
                 }, Context.User!.Email!);
             }
+            // Обновляем фото после загрузки
+            UpdatePreviewImage();
                
         }
-       
+
+        private void WorkPanel_Paint(object sender, PaintEventArgs e)
+        {
+            //throw new System.NotImplementedException();
+            // Обновляем фото после загрузки
+            UpdatePreviewImage();
+        }
     }
 }

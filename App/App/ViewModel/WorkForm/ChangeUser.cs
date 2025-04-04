@@ -1,16 +1,10 @@
 ﻿using BuisnesLogic.ServicesInterface;
 using BuisnessLogic.Extensions;
 using BuisnessLogic.Models.Request;
+using BuisnessLogic.Models;
+using Data.Entities;
 using Data.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using AppContext = BuisnessLogic.Models.AppContext;
 
 namespace App.ViewModel.WorkForm
 {
@@ -20,9 +14,8 @@ namespace App.ViewModel.WorkForm
         private IUserRepositry<UserInfoRequest> _userRepository;
         private FileInfoRequest? _fileInfoRequest;
         private string _EmailOldUser;
-        private protected MainPanelContext _context;
+        private readonly MainPanelContext _context;
         private protected IYandexClient _yandexClient;
-
 
         public ChangeUser(string emailOlduser, MainPanelContext context, IYandexClient yandexClient)
         {
@@ -34,10 +27,56 @@ namespace App.ViewModel.WorkForm
 
             _EmailOldUser = emailOlduser;
 
-            _context = context;
+            _context = AppContext.CurrentContext;
+            //_yandexClient = yandexClient;
             _yandexClient = yandexClient;
 
-            //Controls.Add(buttonUploadPhoto);
+
+            // Получаем данные текущего пользователя
+            var user = _userRepository.Get(_EmailOldUser);
+            if (user is null)
+            {
+                throw new NullReferenceException(nameof(user));
+            }
+
+            // Заполняем текстовые поля
+            textBoxName.Text = user.Name ?? string.Empty;
+            textBoxSurname.Text = user.Surname ?? string.Empty;
+            textBoxPatronymic.Text = user.Patronymic ?? string.Empty;
+            textBoxScoutGroup.Text = user.ScoutGroup ?? string.Empty;
+            textBoxEmail.Text = user.Email ?? string.Empty;
+            textBoxNumber.Text = user.PhoneNumber ?? string.Empty;
+            textBoxInstiut.Text = user.Institute ?? string.Empty;
+
+            // Отображаем фото профиля
+            if (user.Photo != null)
+            {
+                try
+                {
+                    Up(user);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка загрузки фото: {ex.Message}");
+                }
+            }
+
+        }
+
+        private async void Up(User? user)
+        {
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.GetStreamAsync(user.Photo.LinkOnData);
+                planeForPreviewImage.Controls.Clear();
+                planeForPreviewImage.Controls.Add(new PictureBox()
+                {
+                    Image = Image.FromStream(response),
+                    SizeMode = PictureBoxSizeMode.StretchImage,
+                    Size = new Size(230, 290),
+                    BackColor = Color.DarkSlateGray,
+                });
+            }
         }
 
         private void ButtonSave_Click(object sender, EventArgs e)
@@ -67,17 +106,7 @@ namespace App.ViewModel.WorkForm
 
                 _userRepository.Update(olduser.Id, newUser);
 
-                if (olduser is null)
-                {
-                    MessageBox.Show("Пользователь не найден.");
-                    return;
-                }
-
-                _userRepository.Update(olduser.Id, newUser);
-
                 MessageBox.Show("Данные успешно обновлены.");
-                // Закрываем форму с результатом OK
-                DialogResult = DialogResult.OK;
                 Close();
             }
             catch (Exception ex)
@@ -94,40 +123,67 @@ namespace App.ViewModel.WorkForm
             };
             var res = openFileDialog.ShowDialog();
             if (res == DialogResult.Cancel) return;
+            
             try
             {
-                await using (var file = new FileStream(openFileDialog.FileName, FileMode.Open))
+                await using (var file = File.OpenRead(openFileDialog.FileName))
                 {
+                   
                     var fileinfo = ExtensionsManagers.ConfiguratePath(file.Name);
-    
+
+                    // Очищаем старые элементы
+                    planeForPreviewImage.Controls.Clear();
+                    
+                    // Добавляем новое фото
                     planeForPreviewImage.Controls.Add(new PictureBox()
                     {
                         Image = Image.FromStream(file),
                         SizeMode = PictureBoxSizeMode.StretchImage,
-                        Size = new Size(64, 64),
+                        Size = new Size(230, 290),
                         BackColor = Color.DarkSlateGray,
                     });
-
+                   
+                    // Сохраняем фото на сервере
                     await _userRepository.SetImageProfile(_yandexClient, new FileInfoRequest()
                     {
                         File = file,
                         Name = fileinfo.name,
                         Path = fileinfo.path
-                    }, _context.User!.Email!);
-                }  
+                    }, _context.User.Email);
 
+                    // Обновляем предварительный просмотр фото
+                    
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Ошибка при загрузке фото: {ex.Message}");
-
             }
-
         }
+
         private void planeForPreviewImage_Paint(object sender, PaintEventArgs e)
         {
             throw new System.NotImplementedException();
         }
-        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void plane_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -29,70 +29,71 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUserForm));
-            plane = new Panel();
-            WorkPanel = new Panel();
-            ActionBarPanel = new Panel();
-            buttonDataBase = new Button();
-            buttonIncidents = new Button();
-            buttonEducation = new Button();
-            buttonProfile = new Button();
-            panelForImage = new Panel();
+            plane = new System.Windows.Forms.Panel();
+            WorkPanel = new System.Windows.Forms.Panel();
+            ActionBarPanel = new System.Windows.Forms.Panel();
+            buttonDataBase = new System.Windows.Forms.Button();
+            buttonIncidents = new System.Windows.Forms.Button();
+            buttonEducation = new System.Windows.Forms.Button();
+            buttonProfile = new System.Windows.Forms.Button();
+            panelForImage = new System.Windows.Forms.Panel();
             plane.SuspendLayout();
             ActionBarPanel.SuspendLayout();
             SuspendLayout();
             // 
             // plane
             // 
-            plane.BackColor = Color.Lavender;
-            plane.BackgroundImage = Properties.Resources.фон;
-            plane.BackgroundImageLayout = ImageLayout.Stretch;
+            plane.BackColor = System.Drawing.Color.Lavender;
+            plane.BackgroundImage = global::App.Properties.Resources.фон;
+            plane.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             plane.Controls.Add(WorkPanel);
             plane.Controls.Add(ActionBarPanel);
-            plane.Font = new Font("Georgia", 12F);
-            plane.Location = new Point(0, 0);
-            plane.Margin = new Padding(3, 4, 3, 4);
+            plane.Font = new System.Drawing.Font("Georgia", 12F);
+            plane.Location = new System.Drawing.Point(0, 0);
+            plane.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             plane.Name = "plane";
-            plane.Size = new Size(868, 497);
+            plane.Size = new System.Drawing.Size(868, 497);
             plane.TabIndex = 0;
             // 
             // WorkPanel
             // 
-            WorkPanel.BackgroundImage = (Image)resources.GetObject("WorkPanel.BackgroundImage");
-            WorkPanel.BackgroundImageLayout = ImageLayout.Stretch;
-            WorkPanel.Font = new Font("Georgia", 12F);
-            WorkPanel.Location = new Point(204, 4);
-            WorkPanel.Margin = new Padding(3, 4, 3, 4);
+            WorkPanel.BackgroundImage = ((System.Drawing.Image)resources.GetObject("WorkPanel.BackgroundImage"));
+            WorkPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            WorkPanel.Font = new System.Drawing.Font("Georgia", 12F);
+            WorkPanel.Location = new System.Drawing.Point(204, 4);
+            WorkPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             WorkPanel.Name = "WorkPanel";
-            WorkPanel.Size = new Size(673, 499);
+            WorkPanel.Size = new System.Drawing.Size(673, 499);
             WorkPanel.TabIndex = 1;
+            WorkPanel.Paint += WorkPanel_Paint;
             // 
             // ActionBarPanel
             // 
-            ActionBarPanel.BackColor = Color.AliceBlue;
-            ActionBarPanel.BackgroundImage = (Image)resources.GetObject("ActionBarPanel.BackgroundImage");
-            ActionBarPanel.BackgroundImageLayout = ImageLayout.Stretch;
+            ActionBarPanel.BackColor = System.Drawing.Color.AliceBlue;
+            ActionBarPanel.BackgroundImage = ((System.Drawing.Image)resources.GetObject("ActionBarPanel.BackgroundImage"));
+            ActionBarPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ActionBarPanel.Controls.Add(buttonDataBase);
             ActionBarPanel.Controls.Add(buttonIncidents);
             ActionBarPanel.Controls.Add(buttonEducation);
             ActionBarPanel.Controls.Add(buttonProfile);
             ActionBarPanel.Controls.Add(panelForImage);
-            ActionBarPanel.Font = new Font("Georgia", 12F);
-            ActionBarPanel.Location = new Point(-8, 4);
-            ActionBarPanel.Margin = new Padding(3, 4, 3, 4);
+            ActionBarPanel.Font = new System.Drawing.Font("Georgia", 12F);
+            ActionBarPanel.Location = new System.Drawing.Point(-8, 4);
+            ActionBarPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             ActionBarPanel.Name = "ActionBarPanel";
-            ActionBarPanel.Size = new Size(219, 495);
+            ActionBarPanel.Size = new System.Drawing.Size(219, 495);
             ActionBarPanel.TabIndex = 0;
             // 
             // buttonDataBase
             // 
-            buttonDataBase.BackgroundImage = Properties.Resources.коричневый2;
-            buttonDataBase.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonDataBase.Font = new Font("Georgia", 10.8F, FontStyle.Bold);
-            buttonDataBase.ForeColor = Color.FromArgb(64, 64, 64);
-            buttonDataBase.Location = new Point(11, 280);
-            buttonDataBase.Margin = new Padding(3, 4, 3, 4);
+            buttonDataBase.BackgroundImage = global::App.Properties.Resources.коричневый2;
+            buttonDataBase.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            buttonDataBase.Font = new System.Drawing.Font("Georgia", 10.8F, System.Drawing.FontStyle.Bold);
+            buttonDataBase.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)64)), ((int)((byte)64)), ((int)((byte)64)));
+            buttonDataBase.Location = new System.Drawing.Point(11, 280);
+            buttonDataBase.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             buttonDataBase.Name = "buttonDataBase";
-            buttonDataBase.Size = new Size(195, 50);
+            buttonDataBase.Size = new System.Drawing.Size(195, 50);
             buttonDataBase.TabIndex = 5;
             buttonDataBase.Text = "База данных";
             buttonDataBase.UseVisualStyleBackColor = true;
@@ -100,14 +101,14 @@
             // 
             // buttonIncidents
             // 
-            buttonIncidents.BackgroundImage = Properties.Resources.коричневый2;
-            buttonIncidents.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonIncidents.Font = new Font("Georgia", 10.8F, FontStyle.Bold);
-            buttonIncidents.ForeColor = Color.FromArgb(64, 64, 64);
-            buttonIncidents.Location = new Point(11, 232);
-            buttonIncidents.Margin = new Padding(3, 4, 3, 4);
+            buttonIncidents.BackgroundImage = global::App.Properties.Resources.коричневый2;
+            buttonIncidents.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            buttonIncidents.Font = new System.Drawing.Font("Georgia", 10.8F, System.Drawing.FontStyle.Bold);
+            buttonIncidents.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)64)), ((int)((byte)64)), ((int)((byte)64)));
+            buttonIncidents.Location = new System.Drawing.Point(11, 232);
+            buttonIncidents.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             buttonIncidents.Name = "buttonIncidents";
-            buttonIncidents.Size = new Size(195, 50);
+            buttonIncidents.Size = new System.Drawing.Size(195, 50);
             buttonIncidents.TabIndex = 4;
             buttonIncidents.Text = "Мероприятия";
             buttonIncidents.UseVisualStyleBackColor = true;
@@ -115,14 +116,14 @@
             // 
             // buttonEducation
             // 
-            buttonEducation.BackgroundImage = Properties.Resources.коричневый2;
-            buttonEducation.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonEducation.Font = new Font("Georgia", 10.8F, FontStyle.Bold);
-            buttonEducation.ForeColor = Color.FromArgb(64, 64, 64);
-            buttonEducation.Location = new Point(11, 184);
-            buttonEducation.Margin = new Padding(3, 4, 3, 4);
+            buttonEducation.BackgroundImage = global::App.Properties.Resources.коричневый2;
+            buttonEducation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            buttonEducation.Font = new System.Drawing.Font("Georgia", 10.8F, System.Drawing.FontStyle.Bold);
+            buttonEducation.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)64)), ((int)((byte)64)), ((int)((byte)64)));
+            buttonEducation.Location = new System.Drawing.Point(11, 184);
+            buttonEducation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             buttonEducation.Name = "buttonEducation";
-            buttonEducation.Size = new Size(195, 50);
+            buttonEducation.Size = new System.Drawing.Size(195, 50);
             buttonEducation.TabIndex = 3;
             buttonEducation.Text = "Обучение";
             buttonEducation.UseVisualStyleBackColor = true;
@@ -130,14 +131,14 @@
             // 
             // buttonProfile
             // 
-            buttonProfile.BackgroundImage = Properties.Resources.коричневый2;
-            buttonProfile.BackgroundImageLayout = ImageLayout.Stretch;
-            buttonProfile.Font = new Font("Georgia", 10.8F, FontStyle.Bold);
-            buttonProfile.ForeColor = Color.FromArgb(64, 64, 64);
-            buttonProfile.Location = new Point(11, 136);
-            buttonProfile.Margin = new Padding(3, 4, 3, 4);
+            buttonProfile.BackgroundImage = global::App.Properties.Resources.коричневый2;
+            buttonProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            buttonProfile.Font = new System.Drawing.Font("Georgia", 10.8F, System.Drawing.FontStyle.Bold);
+            buttonProfile.ForeColor = System.Drawing.Color.FromArgb(((int)((byte)64)), ((int)((byte)64)), ((int)((byte)64)));
+            buttonProfile.Location = new System.Drawing.Point(11, 136);
+            buttonProfile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             buttonProfile.Name = "buttonProfile";
-            buttonProfile.Size = new Size(195, 50);
+            buttonProfile.Size = new System.Drawing.Size(195, 50);
             buttonProfile.TabIndex = 2;
             buttonProfile.Text = "Профиль";
             buttonProfile.UseVisualStyleBackColor = true;
@@ -145,24 +146,23 @@
             // 
             // panelForImage
             // 
-            panelForImage.BackgroundImage = (Image)resources.GetObject("panelForImage.BackgroundImage");
-            panelForImage.BackgroundImageLayout = ImageLayout.Stretch;
-            panelForImage.Font = new Font("Georgia", 12F);
-            panelForImage.Location = new Point(20, 8);
-            panelForImage.Margin = new Padding(3, 4, 3, 4);
+            panelForImage.BackgroundImage = ((System.Drawing.Image)resources.GetObject("panelForImage.BackgroundImage"));
+            panelForImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            panelForImage.Font = new System.Drawing.Font("Georgia", 12F);
+            panelForImage.Location = new System.Drawing.Point(20, 8);
+            panelForImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             panelForImage.Name = "panelForImage";
-            panelForImage.Size = new Size(83, 74);
+            panelForImage.Size = new System.Drawing.Size(83, 74);
             panelForImage.TabIndex = 0;
             panelForImage.Paint += panelForImage_Paint;
             // 
             // MainUserForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(869, 495);
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(869, 495);
             Controls.Add(plane);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "MainUserForm";
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             Text = "MainUserForm";
             Load += MainUserForm_Load;
             plane.ResumeLayout(false);
@@ -179,6 +179,6 @@
         private Button buttonEducation;
         private Button buttonProfile;
         private Button buttonDataBase;
-        private Panel WorkPanel;
+        private System.Windows.Forms.Panel WorkPanel;
     }
 }

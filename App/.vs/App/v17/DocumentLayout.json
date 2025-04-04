@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CB0BD1C-F941-400B-B00C-A4D9E84309AB}|..\\BuisnessLogic\\BuisnessLogic.csproj|c:\\users\\\u0440\u0430\u0432\u0438\u043B\u044C\\desktop\\app2\\buisnesslogic\\extensions\\extensionsmanagers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\app\\viewmodel\\workform\\changeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\workform\\changeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|c:\\users\\\u0440\u0430\u0432\u0438\u043B\u044C\\desktop\\app2\\app\\app\\viewmodel\\mainuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\mainuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|c:\\users\\\u0440\u0430\u0432\u0438\u043B\u044C\\desktop\\app2\\app\\app\\viewmodel\\workform\\changeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\workform\\changeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|c:\\users\\\u0440\u0430\u0432\u0438\u043B\u044C\\desktop\\app2\\app\\app\\viewmodel\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CB0BD1C-F941-400B-B00C-A4D9E84309AB}|..\\BuisnessLogic\\BuisnessLogic.csproj|c:\\users\\\u0440\u0430\u0432\u0438\u043B\u044C\\desktop\\app2\\buisnesslogic\\extensions\\extensionsmanagers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|c:\\users\\\u0440\u0430\u0432\u0438\u043B\u044C\\desktop\\app2\\app\\app\\userpanels\\allmodulepanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,16 +34,8 @@
       "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\workform\\addincident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|c:\\users\\\u0440\u0430\u0432\u0438\u043B\u044C\\desktop\\app2\\app\\app\\userpanels\\accountpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\userpanels\\accountpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\app\\viewmodel\\mainauthform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\mainauthform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\app\\viewmodel\\workform\\changeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4169A56E-274E-4830-BD1B-322974799998}|App\\App.csproj|solutionrelative:app\\viewmodel\\workform\\changeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CB0BD1C-F941-400B-B00C-A4D9E84309AB}|..\\BuisnessLogic\\BuisnessLogic.csproj|c:\\users\\\u0440\u0430\u0432\u0438\u043B\u044C\\desktop\\app2\\buisnesslogic\\services\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -52,7 +48,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,7 +56,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\LoginForm.cs",
+              "RelativeDocumentMoniker": "App\\ViewModel\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "App\\ViewModel\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T22:36:33.66Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ExtensionsManagers.cs",
               "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\BuisnessLogic\\Extensions\\ExtensionsManagers.cs",
               "RelativeDocumentMoniker": "..\\BuisnessLogic\\Extensions\\ExtensionsManagers.cs",
@@ -73,31 +81,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TaskPanel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\TaskPanel.cs",
-              "RelativeDocumentMoniker": "App\\UserPanels\\TaskPanel.cs",
-              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\TaskPanel.cs",
-              "RelativeToolTip": "App\\UserPanels\\TaskPanel.cs",
-              "ViewState": "AQIAACACAAAAAAAAAAAUwC8CAAAjAAAA",
+              "DocumentIndex": 1,
+              "Title": "MainUserForm.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\MainUserForm.cs",
+              "RelativeDocumentMoniker": "App\\ViewModel\\MainUserForm.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\MainUserForm.cs",
+              "RelativeToolTip": "App\\ViewModel\\MainUserForm.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAEwJ0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T20:54:07.492Z"
+              "WhenOpened": "2025-04-02T18:05:03.57Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CompletePanel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\CompletePanel.cs",
-              "RelativeDocumentMoniker": "App\\UserPanels\\CompletePanel.cs",
-              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\CompletePanel.cs",
-              "RelativeToolTip": "App\\UserPanels\\CompletePanel.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAUwEEAAAAcAAAA",
+              "DocumentIndex": 0,
+              "Title": "ChangeUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\WorkForm\\ChangeUser.cs",
+              "RelativeDocumentMoniker": "App\\ViewModel\\WorkForm\\ChangeUser.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\WorkForm\\ChangeUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "App\\ViewModel\\WorkForm\\ChangeUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T20:52:14.718Z"
+              "WhenOpened": "2025-04-02T19:46:44.996Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AddIncident.cs",
               "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\WorkForm\\AddIncident.cs",
               "RelativeDocumentMoniker": "App\\ViewModel\\WorkForm\\AddIncident.cs",
@@ -109,44 +118,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainUserForm.cs",
-              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\MainUserForm.cs",
-              "RelativeDocumentMoniker": "App\\ViewModel\\MainUserForm.cs",
-              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\MainUserForm.cs",
-              "RelativeToolTip": "App\\ViewModel\\MainUserForm.cs",
-              "ViewState": "AQIAAJQAAAAAAAAAAAAEwJ0AAAAMAAAA",
+              "DocumentIndex": 6,
+              "Title": "CompletePanel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\CompletePanel.cs",
+              "RelativeDocumentMoniker": "App\\UserPanels\\CompletePanel.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\CompletePanel.cs",
+              "RelativeToolTip": "App\\UserPanels\\CompletePanel.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAUwEEAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T18:05:03.57Z"
+              "WhenOpened": "2025-04-02T20:52:14.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChangeUser.cs",
-              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\WorkForm\\ChangeUser.cs",
-              "RelativeDocumentMoniker": "App\\ViewModel\\WorkForm\\ChangeUser.cs",
-              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\WorkForm\\ChangeUser.cs",
-              "RelativeToolTip": "App\\ViewModel\\WorkForm\\ChangeUser.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAEwDAAAAAIAAAA",
+              "DocumentIndex": 5,
+              "Title": "TaskPanel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\TaskPanel.cs",
+              "RelativeDocumentMoniker": "App\\UserPanels\\TaskPanel.cs",
+              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\TaskPanel.cs",
+              "RelativeToolTip": "App\\UserPanels\\TaskPanel.cs",
+              "ViewState": "AQIAACACAAAAAAAAAAAUwC8CAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T17:28:44.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T20:54:07.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AccountPanel.cs",
-              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\AccountPanel.cs",
-              "RelativeDocumentMoniker": "App\\UserPanels\\AccountPanel.cs",
-              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\AccountPanel.cs",
-              "RelativeToolTip": "App\\UserPanels\\AccountPanel.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAEwCAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T18:27:17.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AllModulePanel.cs",
               "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\UserPanels\\AllModulePanel.cs",
               "RelativeDocumentMoniker": "App\\UserPanels\\AllModulePanel.cs",
@@ -155,17 +151,6 @@
               "ViewState": "AQIAAGUAAAAAAAAAAAAUwHQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T18:45:05.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ChangeUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\WorkForm\\ChangeUser.cs",
-              "RelativeDocumentMoniker": "App\\ViewModel\\WorkForm\\ChangeUser.cs",
-              "ToolTip": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\App\\App\\ViewModel\\WorkForm\\ChangeUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "RelativeToolTip": "App\\ViewModel\\WorkForm\\ChangeUser.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T19:46:44.996Z"
             },
             {
               "$type": "Document",
@@ -180,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0420\u0430\u0432\u0438\u043B\u044C\\Desktop\\App2\\BuisnessLogic\\Services\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "..\\BuisnessLogic\\Services\\Repositories\\UserRepository.cs",
